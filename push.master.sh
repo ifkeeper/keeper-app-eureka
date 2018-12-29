@@ -19,6 +19,10 @@
 # the command is: `git remote add github git@github.com:<your-repository>.git`
 # Warning, you should not execute `git push -u <remote> <branch>`
 
+git remote remove origin
+git remote add github git@github.com:mingrn-keeper/keeper-app-eureka.git
+git remote add gitlab git@gitlab.com:ifkeeper/keeper-app-eureka.git
+
 echo "commit to git@github.com ..."
 git push github master
 echo "Congratulations!"
