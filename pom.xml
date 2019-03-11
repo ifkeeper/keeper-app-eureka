@@ -4,25 +4,25 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>keeper-app-eureka</artifactId>
+    <artifactId>itumate-app-eureka</artifactId>
     <version>${parent.version}</version>
     <packaging>jar</packaging>
 
     <parent>
-        <groupId>com.mingrn.keeper</groupId>
-        <artifactId>keeper-parent</artifactId>
+        <groupId>com.mingrn.itumate</groupId>
+        <artifactId>itumate-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
     <properties>
-        <keeper.global-handler.version>0.0.1-SNAPSHOT</keeper.global-handler.version>
+        <itumate.global-handler.version>0.0.1-SNAPSHOT</itumate.global-handler.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>${parent.groupId}</groupId>
-            <artifactId>keeper-global-handler</artifactId>
-            <version>${keeper.global-handler.version}</version>
+            <artifactId>itumate-global-handler</artifactId>
+            <version>${itumate.global-handler.version}</version>
         </dependency>
 
         <!--Eureka Server-->

@@ -1,4 +1,4 @@
-package com.mingrn.keeper.eureka;
+package com.mingrn.itumate.eureka;
 
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
