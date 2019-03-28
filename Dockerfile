@@ -13,6 +13,11 @@
 #
 #      <a href="https://spring.io/guides/gs/spring-boot-docker/#_what_you_ll_need">Spring Boot with Docker</a>
 #
+# App Note:
+#
+#    Image Name : itumate/itumate-app-eureka:<tag>
+#    Expose Port: 8000/TCP
+#    Time Zone  : Asia/Shanghai
 
 FROM openjdk:8-jdk-alpine
 
@@ -22,6 +27,8 @@ ARG  DEPENDENCY=target/dependency
 COPY ${DEPENDENCY}/BOOT-INF/classes     /app
 COPY ${DEPENDENCY}/BOOT-INF/lib         /app/lib
 COPY ${DEPENDENCY}/META-INF             /app/META-INF
+
+EXPOSE 8000
 
 ENV LANG="en_US.UTF-8" \
     LANGUAGE="en_US:en" \
